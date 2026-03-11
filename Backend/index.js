@@ -36,6 +36,12 @@ app.get("/order", (req,res)=>{
     });
 });
 
+app.post("/order", (req,res)=>{
+    res.json({
+        message:"Order created successfully"
+    })
+})
+
 app.listen(5000,()=>{
     console.log("Server running on port 5000");
 });
